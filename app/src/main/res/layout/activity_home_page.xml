@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is activity_home_page -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context=".home_page">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="51dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:fontFamily="@font/glitch_inside"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#004D3E"
+        android:text="@string/home"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEvents"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#004D3E"
+        android:text="@string/events"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCalender"
+        app:layout_constraintStart_toEndOf="@+id/buttonHome" />
+
+    <Button
+        android:id="@+id/buttonCalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#004D3E"
+        android:text="@string/calender"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFriends"
+        app:layout_constraintStart_toEndOf="@+id/buttonEvents" />
+
+    <Button
+        android:id="@+id/buttonFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#004D3E"
+        android:text="@string/friends"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalender" />
+
+    <ScrollView
+        android:id="@+id/fieldContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ScrollView
+        android:id="@+id/scrollViewHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="Scrollable content of the home page."
+        android:importantForAccessibility="yes"
+        app:layout_constraintBottom_toTopOf="@+id/fieldContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    <LinearLayout
+        android:id="@+id/fieldLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    </ScrollView>
+    <Button
+    android:id="@+id/buttonCog"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:background="@drawable/settings_icon"
+    android:elevation="8dp"
+    android:src="@drawable/settings_icon"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+    app:layout_constraintEnd_toEndOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is field_item -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_corners"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@drawable/test_image" />
+
+    <View
+        android:id="@+id/semiTransparentBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#B3D9D9D9"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBusiness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewFieldName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewFieldName"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/"
+        android:gravity="center"
+        android:text="Name of field"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewBusiness"
+        app:layout_constraintEnd_toEndOf="@id/imageViewBusiness"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="@id/imageViewBusiness"
+        app:layout_constraintTop_toTopOf="@id/imageViewBusiness"
+        app:layout_constraintVertical_bias="0.963" />
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#765C19"
+        android:fontFamily="@font/"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/view"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewBusiness"
+        app:layout_constraintEnd_toEndOf="@id/imageViewBusiness"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="@id/imageViewBusiness"
+        app:layout_constraintTop_toTopOf="@id/imageViewBusiness"
+        app:layout_constraintVertical_bias="0.968" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

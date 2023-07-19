@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="TextAppearance.Small" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextAppearance.Large" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="circularImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- Adjust the value to control the circle size -->
+    </style>
+</resources>

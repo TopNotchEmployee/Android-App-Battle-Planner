@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Battle Planner</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="username">Username</string>
+    <string name="name">Name</string>
+    <string name="birthday">Birthday "YYYY-MM-DD" </string>
+    <string name="login_page">Login Page</string>
+    <string name="view">View</string>
+    <string name="home">HOME</string>
+    <string name="events">EVENTS</string>
+    <string name="calender">CALENDAR</string>
+    <string name="friends">FRIENDS</string>
+    <string name="book_now">BOOK NOW</string>
+    <string name="book">BOOK</string>
+    <string name="booked">BOOKED</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="chat_message_format">%1$s: %2$s</string>
+    <string name="location">Location</string>
+
+    <string name="bussiness_name">Business name</string>
+    <string name="business_email">Email</string>
+    <string name="business_number">Mobile Number</string>
+    <string name="webiste">Webiste link</string>
+
+
+    <string name="field_name">Field name</string>
+    <string name="range_fee">Range Fee</string>
+    <string name="rental_fee">Rental Fee</string>
+    <string name="rnr">Rules and Regulations</string>
+    <string name="indemnity_form">Indemnity Form</string>
+
+    <string name="host">Host name</string>
+    <string name="co_host">Co-host</string>
+    <string name="event_name">Event name</string>
+    <string name="num_tickets">Total tickets</string>
+    <string name="ticket_price">Ticket Price</string>
+    <string name="recurring">Recurring</string>
+    <string name="date">Date of Event</string>
+    <string name="image">Link to Event Image</string>
+    <string name="description">A short description of the event</string>
+</resources>

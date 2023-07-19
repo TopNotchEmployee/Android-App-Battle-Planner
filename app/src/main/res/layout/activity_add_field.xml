@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addField">
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/black"
+        android:fontFamily="@font/glitch_inside"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/home"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/events"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/calender"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/friends"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/register_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextFieldName"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints="BUSINESS NAME"
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="@string/field_name"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+            <EditText
+                android:id="@+id/editTextLocation"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="@string/location"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextFieldName" />
+
+            <EditText
+                android:id="@+id/editTextRange"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="@string/range_fee"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextLocation" />
+
+            <EditText
+                android:id="@+id/editTextRental"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="@string/rental_fee"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextRange" />
+
+            <EditText
+                android:id="@+id/editTextRules"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="@string/rnr"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextRental" />
+
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#765C19"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/register"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

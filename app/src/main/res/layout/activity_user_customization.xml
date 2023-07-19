@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_customization">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/register_bg"
+        android:contentDescription="@drawable/register_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:onClick="selectProfilePicture" />
+
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/glitch_inside"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="329dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Current Username"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewAppName" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImageView"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewProfilePic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/login_bg" />
+
+            <Button
+                android:id="@+id/buttonSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Select Image"
+                android:onClick="selectProfilePicture" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="290dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:padding="0dp"
+                android:backgroundTint="#765C19"
+                android:fontFamily="@font/"
+                android:text="Save And Back"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonSelectImage" />
+
+            <Button
+                android:id="@+id/registerBusinessButton"
+                android:layout_width="290dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:padding="0dp"
+                android:backgroundTint="#765C19"
+                android:fontFamily="@font/"
+                android:text="Register Business"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="@id/saveButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/saveButton"
+                android:onClick="registerBusiness" />
+
+            <EditText
+                android:id="@+id/editTextSupport"
+                android:layout_width="329dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Support: jpaulsen1317@gmail.com"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewAppName" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

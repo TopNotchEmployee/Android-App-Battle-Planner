@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_event">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/register_bg"
+        android:contentDescription="@drawable/register_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/glitch_inside"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerTextView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextEventName"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints="EVENT NAME"
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="@string/event_name"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+            <EditText
+                android:id="@+id/editTextTicketNum"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="@string/num_tickets"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextFieldName" />
+
+            <EditText
+                android:id="@+id/editTextTicketPrice"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="@string/ticket_price"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextTicketNum" />
+
+            <EditText
+                android:id="@+id/editTextYear"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints="yyyy"
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="Year"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/editTextMonth"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints="mm"
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="Month"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editTextDay"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints="dd"
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="Day"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="380dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/login_bg" />
+
+            <Button
+                android:id="@+id/uploadImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Upload Image" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#765C19"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/register"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

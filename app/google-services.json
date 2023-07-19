@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "590029840068",
+    "project_id": "itmdaproject-3cb4b",
+    "storage_bucket": "itmdaproject-3cb4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590029840068:android:63254aafd100996ce8b391",
+        "android_client_info": {
+          "package_name": "com.example.battleplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590029840068-b442kftc61c1uauicc4h4cgmd9r4bsq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_3bbB3j8RhvGaHxlh8sd_tnyO_qzVLdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590029840068-b442kftc61c1uauicc4h4cgmd9r4bsq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
