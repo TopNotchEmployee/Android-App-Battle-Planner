@@ -3,6 +3,7 @@ package com.example.battleplanner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
@@ -374,6 +375,11 @@ public class event_page extends AppCompatActivity {
 
         // Update the UI to reflect the booking
         updateEventUI(event, true);
+
+        // Replace the URL below with the snapscan url when business is registered, the paymentGatewayUrl can be taken from the firebase realtime database if necessary
+       String paymentGatewayUrl = "https://www.example.com/payment";
+       Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(paymentGatewayUrl));
+       startActivity(browserIntent);
     }
 
     private String getCurrentDate() {
